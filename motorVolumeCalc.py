@@ -1,5 +1,5 @@
 import tkinter as tk
-pi = 3.14159265359
+import math
 
 vol = None
 
@@ -10,7 +10,7 @@ def calcVolume():
 
     try:
 
-        vol = pi*(float(Mwidth)/2)**2
+        vol = (math.pi)*(float(Mwidth)/2)**2
     
         vol = vol*(float(Mheight))
 
@@ -19,7 +19,6 @@ def calcVolume():
         vol = 0
     
     vol = round(vol,2)
-    print(vol)
     volResult.config(text = vol)
 
 window = tk.Tk()
